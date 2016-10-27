@@ -1,0 +1,169 @@
+%!TEX root = main.tex
+
+% \renewcommand\arraystretch{1.4} %\setlength\minrowclearance{2.4pt}
+\setlength\extrarowheight{5pt}
+
+%\begin{table}[t]
+%\centering
+%\caption{Datasets and Sensors for SLAM \label{tab:datasets}}
+%\label{tab:datasets}
+%\begin{tabular}{| m{3cm} | m{4cm} |}
+%\hline
+%{\bf Topic} & {\bf References}\\
+%\hline\hline
+%Front-ends and back-ends in small/medium scale scenarios &~\cite{Sturm2012a,Wasenmuller2016a,Oettershagen2016a,Smith09ijrr,Huang2010a, Pandey2011a,Geiger2013a,Burri12016a,Pomerleau2012a1,Warren2010a, Warren2012a, Guzman2015a,Blanco2016a,Radish2003a,MIT2016a,Oxford2016a1,Kummerle2009a,Furgale2012a, Tong2013a, Bircher2015, Pomerleau2011a1,Hensel2016a,Peynot2010a,Washington2016a1,Anderson2012a1,IRI2016a1,Osnabruck2016a1, Rawseeds2016a1, NYU016a1}\\
+%\hline
+%Back-ends in small/medium scale scenarios &~\cite{Bosse2004a,Stachniss2016a,Carlone2016a1,Latif2016a1}\\
+%\hline
+%Front-ends and back-ends in synthetic scenarios &~\cite{Handa14icra}\\
+%\hline
+%Loop-closures &~\cite{Glover10icra,Milford2012a,Pronobis2009a,Rawseeds2016a1}\\
+%\hline
+%Long-term SLAM &~\cite{Dayoub2011a,Biber2009a,Pronobis2009a,Biswas2013,MIT2016a,Oxford2016a1}\\
+%\hline
+%Semantic SLAM &~\cite{Cordts2016a,Yang2011a,Pronobis2009a}\\
+%\hline
+%Multi-robot SLAM &~\cite{Leung2011a}\\
+%\hline
+%Performance assessment &~\cite{Nardi2015a}\\
+%\hline
+%\end{tabular}
+%%\vspace{-5mm}
+%\end{table}
+%%\caption{Datasets and Sensors for SLAM. IMU (Inertial Measurment Unit). GPS (Global Positioning system). LABELS ( Human anotated information). LIDAR (Light Detection And Ranging) 2D & 3D. LOC (Localization information). MAP (Enviromental representation). RGB (Color images). RGBD (Color+Depth images). Stereo (Bi/trinocular Stero images).  \label{tab:datasets}}
+\label{tab:datasets}
+
+\begin{table*}[h!]
+\centering
+\caption{Datasets and Sensors for SLAM. \label{tab:datasets}}
+\caption*{IMU (Inertial Measurement Unit), GPS (Global Positioning System), LABELS (Human-annotated labels), 2D/3D 
+LIDAR (Light Detection And Ranging), LOC (Localization ground truth), MAP (map ground truth), RGB (color images),
+ RGBD (color \& depth images), Stereo (Bi/trinocular stereo images).}
+\label{tab:datasets}
+\begin{tabular}{| m{3cm} | m{2.0cm} | c| c| c| c| c| c| c| c| c| c|}
+\hline
+{\bf Topic} & {\bf References} & \multicolumn{10}{ c| }{\bf Data} \\
+\cline{3-12}
+  &  & IMU & GPS & Labels & LIDAR2D & LIDAR3D & LOC & MAP & RGB & RGBD & Stereo \\
+\hline\hline
+%%
+\multirow{9}{3cm}{Front-ends and back-ends in small / medium scale scenarios}
+&~\cite{Sturm2012a} & \checkmark & & & & & \checkmark  & & & \checkmark  & \\
+\cline{2-12}
+&~\cite{Wasenmuller2016a} & & & & & & \checkmark  & \checkmark & & \checkmark  & \\
+\cline{2-12}
+&~\cite{Oettershagen2016a} & \checkmark & \checkmark & & \checkmark & & \checkmark  & \checkmark & & & \\
+\cline{2-12}
+&~\cite{Smith09ijrr} & & \checkmark & & \checkmark & & \checkmark  & & & & \checkmark \\
+\cline{2-12}
+&~\cite{Huang2010a,Pandey2011a} &\checkmark & \checkmark & \checkmark & \checkmark  & \checkmark &  \checkmark  & & \checkmark& &  \\
+\cline{2-12}
+&~\cite{Warren2010a, Warren2012a, Guzman2015a} & \checkmark  & \checkmark &  &   &  &    & & & & \checkmark \\
+\cline{2-12}
+&~\cite{Geiger2013a} & \checkmark  & \checkmark & \checkmark  & \checkmark   & \checkmark  & \checkmark    & & \checkmark & & \checkmark \\
+\cline{2-12}
+&~\cite{Burri12016a} & \checkmark  & &  &   &  & \checkmark & \checkmark & \checkmark & & \checkmark \\
+\cline{2-12}
+&~\cite{Pomerleau2012a1} & \checkmark  & \checkmark &  & & \checkmark & & & & \checkmark& \checkmark \\
+\hline
+%%
+Back-ends in small / medium scale scenarios &~\cite{Carlone2016a1,Latif2016a1}& &  & \checkmark  & & & \checkmark & & & & \\
+\hline
+%%
+Front-ends and back-ends in synthetic scenarios &~\cite{Handa14icra} & & & & & & \checkmark  & \checkmark & & \checkmark & \\
+\hline
+%%
+\multirow{3}{3cm}{Loop-closures} 
+&~\cite{Glover10icra,Rawseeds2016a1} & & \checkmark & & & & & & \checkmark & & \\
+\cline{2-12}
+&~\cite{Milford12icra} & &  & \checkmark & & & & & \checkmark & & \\
+\cline{2-12}
+&~\cite{Pronobis2009a} & & & \checkmark & \checkmark  & & \checkmark  & & \checkmark & & \\
+\hline
+%%
+\multirow{2}{3cm}{Long-term SLAM}
+&~\cite{Dayoub2011a,Biber2009a} & &  & \checkmark & \checkmark & & & & \checkmark & & \\
+\cline{2-12}
+&~\cite{Pronobis2009a} & & & \checkmark & \checkmark  & & \checkmark  & & \checkmark & & \\
+\hline
+%%
+\multirow{2}{3cm}{Semantic SLAM} 
+&~\cite{Cordts2016a} & & \checkmark & \checkmark & & & \checkmark  & & \checkmark & & \\
+\cline{2-12}
+&~\cite{Yang2011a,Pronobis2009a} & & & \checkmark & \checkmark  & & \checkmark  & & \checkmark & & \\
+\hline
+%%
+Multi-robot SLAM &~\cite{Leung2011a} & & & \checkmark & & & \checkmark  & & & & \\
+\hline
+\end{tabular}
+%\vspace{-5mm}
+\end{table*}
+
+
+%\begin{table}[t]
+%\centering
+%\caption{Datasets for SLAM \label{tab:datasets}}
+%\label{tab:datasets}
+%\begin{tabular}{| m{3cm} | m{2cm} | m{2cm} |}
+%\hline
+%{\bf Topic} & {\bf References} & {\bf Data} \\
+%\hline\hline
+%%\multirow{2}{3cm}{Front-ends and back-ends in small/medium scale scenarios}
+%% &~\cite{Sturm2012a} & RGBD, IMU and LOC \\
+%% \cline{2-3}
+%% &~\cite{Wasenmuller2016a} & RGBD, LOC and MAP \\
+%% \cline{2-3}
+%% &~\cite{Oettershagen2016a} & RGB, IMU, GPS, THI, LOC and MAP \\  
+%% \cline{2-3}
+%% &~\cite{Smith09ijrr} & Stereo, RGB, GPS, Lidar 2D and LOC\\  
+%%  \cline{2-3}
+%% &~\cite{Huang2010a, Pandey2011a} & RGB, Lidar 2D, Lidar 3D, IMU, GPS, LOC and Labels \\
+%% \cline{2-3}
+%% &~\cite{Geiger2013a} & Stereo, RGB, Lidar 2D, Lidar 3D, IMU, GPS, LOC and Labels \\
+%% \cline{2-3} 
+%% &~\cite{Burri12016a} & Stereo, RGB, IMU, LOC and MAP \\
+%% \cline{2-3}
+%% &~\cite{Pomerleau2012a1} & Lidar 3D, IMU, GPS, LOC and MAP \\
+%% \cline{2-3}
+%% &~\cite{Warren2010a, Warren2012a, Guzman2015a} & Stereo, IMU and GPS \\
+%% \hline
+%\multirow{2}{3cm}{Front-ends in small/medium scale scenarios}
+% &\cite{Furgale2012a, Tong2013a} & Stereo, RGB, LIDAR 3D, GPS, LOC and MAP \\
+% \cline{2-3}
+% &~\cite{Bircher2015} & Stereo, RGB, IMU, GPS and LOC\\
+% \cline{2-3}
+% &\cite{Pomerleau2011a} & RGBD and LOC \\
+% \hline
+%\multirow{2}{3cm}{Back-ends in small/medium scale scenarios}
+% & \cite{Bosse2004a} & LIDAR 2D and sonar \\ 
+% \cline{2-3}
+% & - & -\\
+% \hline
+%%\multirow{2}{3cm}{Front-ends and back-ends in synthetic scenarios}
+%% &~\cite{Handa14icra} & RGBD, LOC and MAP \\
+%% \cline{2-3}
+%% & - & -\\
+%% \hline
+%\multirow{2}{3cm}{Loop-closures}
+% &~\cite{Glover10icra} & RGB and GPS \\
+% \cline{2-3}
+% & \cite{Milford2012a} & RGB and labels\\
+%\multirow{2}{3cm}{Long-term SLAM}
+% &\cite{Dayoub2011a,Biber2009a} & LIDAR 2D, RGB and labels \\
+%% \cline{2-3}
+%% & - & - \\
+%% \hline
+%%\multirow{2}{3cm}{Semantic SLAM}
+%% &~\cite{Cordts2016a} & RGB and labels\\
+%% \cline{2-3}
+%% &~\cite{Yang2011a} & RGB, Lidar 2D and labels\\  
+%% \hline
+%%\multirow{2}{3cm}{Multi-robot SLAM}
+%% & ~\cite{Leung2011a} & Range, Bearing and LOC \\
+%% \hline
+%%\multirow{2}{3cm}{Methodology for performance benchmark}
+%% &~\cite{Kummerle2009a,Nardi2015a} & -\\
+%% \hline
+%\end{tabular}
+%%\vspace{-5mm}
+%%\end{table}
